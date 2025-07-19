@@ -5,13 +5,9 @@ before_install:
   - yes | sdkmanager --licenses
 
 install:
-  - chmod +x ./jitpack.sh
-  - ./jitpack.sh
   - pwd
-  - ls -la android/ffmpeg-kit-android-lib/build/outputs/aar
-  - mkdir -p published
-  - cp android/ffmpeg-kit-android-lib/build/outputs/aar/ffmpeg-kit-release.aar published/
+  - ls -la prebuilt/bundle-android-aar/ffmpeg-kit
 
 artifacts:
-  - path: published/ffmpeg-kit-release.aar
+  - path: prebuilt/bundle-android-aar/ffmpeg-kit/ffmpeg-kit.aar
     type: aar

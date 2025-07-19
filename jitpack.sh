@@ -1,7 +1,7 @@
 #!/bin/bash
 set -e
 
-wget -q --show-progress https://dl.google.com/android/repository/android-ndk-r25c-linux.zip
+wget -q https://dl.google.com/android/repository/android-ndk-r25c-linux.zip
 unzip -qq android-ndk-r25c-linux.zip
 mv android-ndk-r25c "$HOME"/android-ndk
 
