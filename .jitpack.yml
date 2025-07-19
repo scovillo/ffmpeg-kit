@@ -9,5 +9,5 @@ install:
   - ./jitpack.sh
 
 artifacts:
-  - path: ffmpeg-kit/android/ffmpeg-kit-android-lib/build/outputs/aar/ffmpeg-kit-release.aar
+  - path: ./android/ffmpeg-kit-android-lib/build/outputs/aar/ffmpeg-kit-release.aar
     type: aar
