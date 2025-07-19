@@ -29,7 +29,7 @@ afterEvaluate {
                 artifactId = 'ffmpeg-kit'
                 version = '1.0'
 
-                artifact("$buildDir/prebuilt/bundle-android-aar/ffmpeg-kit/ffmpeg-kit.aar") {
+                artifact("$buildDir/../prebuilt/bundle-android-aar/ffmpeg-kit/ffmpeg-kit.aar") {
                     extension = 'aar'
                 }
             }

@@ -9,6 +9,9 @@ install:
   - ./jitpack.sh
   - pwd
   - ls -la prebuilt/bundle-android-aar/ffmpeg-kit/
+  - ls -la android/ffmpeg-kit-android-lib/build/outputs/aar
+  - cd android
+  - ./gradlew publish
 
 artifacts:
   - path: prebuilt/bundle-android-aar/ffmpeg-kit/ffmpeg-kit.aar
