@@ -18,3 +18,21 @@ allprojects {
 task clean(type: Delete) {
     delete rootProject.buildDir
 }
+
+apply plugin: 'maven-publish'
+
+afterEvaluate {
+    publishing {
+        publications {
+            ffmpegKitAar(MavenPublication) {
+                groupId = 'io.github.scovillo'
+                artifactId = 'ffmpeg-kit'
+                version = '1.0'
+
+                artifact("$buildDir/prebuilt/bundle-android-aar/ffmpeg-kit/ffmpeg-kit.aar") {
+                    extension = 'aar'
+                }
+            }
+        }
+    }
+}
