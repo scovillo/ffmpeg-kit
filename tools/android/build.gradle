@@ -74,9 +74,7 @@ afterEvaluate {
                 artifactId = 'ffmpeg-kit'
                 version = '1.0'
 
-                artifact("$buildDir/outputs/aar/ffmpeg-kit-release.aar") {
-                    extension = 'aar'
-                }
+                from components.release
             }
         }
         repositories {
