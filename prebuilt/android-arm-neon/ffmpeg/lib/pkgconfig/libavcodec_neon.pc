@@ -1,0 +1,14 @@
+prefix=/home/luschee/IdeaProjects/ffmpeg-kit-scovillo/prebuilt/android-arm-neon/ffmpeg
+exec_prefix=${prefix}
+libdir=/home/luschee/IdeaProjects/ffmpeg-kit-scovillo/prebuilt/android-arm-neon/ffmpeg/lib
+includedir=/home/luschee/IdeaProjects/ffmpeg-kit-scovillo/prebuilt/android-arm-neon/ffmpeg/include
+
+Name: libavcodec_neon
+Description: FFmpeg codec library
+Version: 60.3.100
+Requires: 
+Requires.private: libswresample_neon >= 4.10.100, libavutil_neon >= 58.2.100
+Conflicts:
+Libs: -L${libdir}  -lavcodec_neon 
+Libs.private: -pthread -lm -latomic -L/home/luschee/Android/Sdk/ndk/android-ndk-r25c/platforms/android-21/arch-arm/usr/lib -lz
+Cflags: -I${includedir}

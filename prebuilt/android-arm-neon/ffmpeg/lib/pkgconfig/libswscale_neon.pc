@@ -1,0 +1,14 @@
+prefix=/home/luschee/IdeaProjects/ffmpeg-kit-scovillo/prebuilt/android-arm-neon/ffmpeg
+exec_prefix=${prefix}
+libdir=/home/luschee/IdeaProjects/ffmpeg-kit-scovillo/prebuilt/android-arm-neon/ffmpeg/lib
+includedir=/home/luschee/IdeaProjects/ffmpeg-kit-scovillo/prebuilt/android-arm-neon/ffmpeg/include
+
+Name: libswscale_neon
+Description: FFmpeg image rescaling library
+Version: 7.1.100
+Requires: 
+Requires.private: libavutil_neon >= 58.2.100
+Conflicts:
+Libs: -L${libdir}  -lswscale_neon 
+Libs.private: -lm -latomic
+Cflags: -I${includedir}

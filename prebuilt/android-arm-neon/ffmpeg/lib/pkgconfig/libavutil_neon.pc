@@ -1,0 +1,14 @@
+prefix=/home/luschee/IdeaProjects/ffmpeg-kit-scovillo/prebuilt/android-arm-neon/ffmpeg
+exec_prefix=${prefix}
+libdir=/home/luschee/IdeaProjects/ffmpeg-kit-scovillo/prebuilt/android-arm-neon/ffmpeg/lib
+includedir=/home/luschee/IdeaProjects/ffmpeg-kit-scovillo/prebuilt/android-arm-neon/ffmpeg/include
+
+Name: libavutil_neon
+Description: FFmpeg utility library
+Version: 58.2.100
+Requires: 
+Requires.private: 
+Conflicts:
+Libs: -L${libdir}  -lavutil_neon 
+Libs.private: -pthread -lm -latomic
+Cflags: -I${includedir}

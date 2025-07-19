@@ -1,0 +1,14 @@
+prefix=/home/luschee/IdeaProjects/ffmpeg-kit-scovillo/prebuilt/android-arm-neon/ffmpeg
+exec_prefix=${prefix}
+libdir=/home/luschee/IdeaProjects/ffmpeg-kit-scovillo/prebuilt/android-arm-neon/ffmpeg/lib
+includedir=/home/luschee/IdeaProjects/ffmpeg-kit-scovillo/prebuilt/android-arm-neon/ffmpeg/include
+
+Name: libavfilter_neon
+Description: FFmpeg audio/video filtering library
+Version: 9.3.100
+Requires: 
+Requires.private: libswscale_neon >= 7.1.100, libavformat_neon >= 60.3.100, libavcodec_neon >= 60.3.100, libswresample_neon >= 4.10.100, libavutil_neon >= 58.2.100
+Conflicts:
+Libs: -L${libdir}  -lavfilter_neon 
+Libs.private: -pthread -lm -latomic
+Cflags: -I${includedir}

@@ -1,0 +1,14 @@
+prefix=/home/luschee/IdeaProjects/ffmpeg-kit-scovillo/prebuilt/android-arm-neon/ffmpeg
+exec_prefix=${prefix}
+libdir=/home/luschee/IdeaProjects/ffmpeg-kit-scovillo/prebuilt/android-arm-neon/ffmpeg/lib
+includedir=/home/luschee/IdeaProjects/ffmpeg-kit-scovillo/prebuilt/android-arm-neon/ffmpeg/include
+
+Name: libswresample_neon
+Description: FFmpeg audio resampling library
+Version: 4.10.100
+Requires: 
+Requires.private: libavutil_neon >= 58.2.100
+Conflicts:
+Libs: -L${libdir}  -lswresample_neon 
+Libs.private: -lm -latomic
+Cflags: -I${includedir}

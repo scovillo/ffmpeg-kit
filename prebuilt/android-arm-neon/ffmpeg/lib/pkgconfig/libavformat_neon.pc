@@ -1,0 +1,14 @@
+prefix=/home/luschee/IdeaProjects/ffmpeg-kit-scovillo/prebuilt/android-arm-neon/ffmpeg
+exec_prefix=${prefix}
+libdir=/home/luschee/IdeaProjects/ffmpeg-kit-scovillo/prebuilt/android-arm-neon/ffmpeg/lib
+includedir=/home/luschee/IdeaProjects/ffmpeg-kit-scovillo/prebuilt/android-arm-neon/ffmpeg/include
+
+Name: libavformat_neon
+Description: FFmpeg container format library
+Version: 60.3.100
+Requires: 
+Requires.private: libavcodec_neon >= 60.3.100, libswresample_neon >= 4.10.100, libavutil_neon >= 58.2.100
+Conflicts:
+Libs: -L${libdir}  -lavformat_neon 
+Libs.private: -lm -latomic -lgmp -L/home/luschee/Android/Sdk/ndk/android-ndk-r25c/platforms/android-21/arch-arm/usr/lib -lz -L/home/luschee/IdeaProjects/ffmpeg-kit-scovillo/prebuilt/android-arm-neon/gnutls/lib -lgnutls -L/home/luschee/IdeaProjects/ffmpeg-kit-scovillo/prebuilt/android-arm-neon/nettle/lib -lhogweed -lgmp -lnettle -L/home/luschee/Android/Sdk/ndk/android-ndk-r25c/platforms/android-21/arch-arm/usr/lib -lz
+Cflags: -I${includedir}
