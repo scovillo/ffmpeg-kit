@@ -13,7 +13,7 @@ export ANDROID_NDK=$HOME/android-ndk
 printenv
 
 chmod +x android.sh
-./android.sh --enable-gnutls --disable-x86 --disable-x86-64 --disable-arm-v7a --api-level=21 || export BUILD_FAILED=true
+SKIP_ffmpeg=1 ./android.sh --enable-gnutls --disable-x86 --disable-x86-64 --disable-arm-v7a --api-level=21 || export BUILD_FAILED=true
 echo "======= BEGIN build.log (arm-v7a-neon) ======="
 tail -n 200 build.log || echo "build.log not found"
 echo "======= END build.log ======="

@@ -10,7 +10,7 @@ android {
     defaultConfig {
         minSdk 24
         targetSdk 33
-        versionCode 240600
+        versionCode 210600
         versionName "6.0"
         project.archivesBaseName = "ffmpeg-kit"
         consumerProguardFiles "consumer-rules.pro"
@@ -40,6 +40,7 @@ android {
             systemProperty 'enable.ffmpeg.kit.test.mode', 'true'
         }
     }
+
 
     publishing {
         singleVariant('release') {
