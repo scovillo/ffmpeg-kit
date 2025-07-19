@@ -10,8 +10,6 @@ install:
   - pwd
   - ls -la prebuilt/bundle-android-aar/ffmpeg-kit/
   - ls -la android/ffmpeg-kit-android-lib/build/outputs/aar
-  - cd android
-  - ./gradlew publish
 
 artifacts:
   - path: android/ffmpeg-kit-android-lib/build/outputs/aar/ffmpeg-kit-release.aar
