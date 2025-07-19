@@ -14,6 +14,8 @@ fi
   --with-sysroot="${ANDROID_SYSROOT}" \
   --enable-static \
   --disable-assembly \
+  --disable-docs \
+  --disable-doc \
   --disable-shared \
   --disable-fast-install \
   --disable-maintainer-mode \
