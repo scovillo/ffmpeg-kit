@@ -238,6 +238,8 @@ for custom_library_index in "${CUSTOM_LIBRARIES[@]}"; do
   fi
 done
 
+SKIP_ffmpeg=1
+
 # SKIP TO SPEED UP THE BUILD
 if [[ ${SKIP_ffmpeg} -ne 1 ]]; then
 
