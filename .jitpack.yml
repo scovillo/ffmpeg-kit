@@ -5,8 +5,10 @@ before_install:
   - yes | sdkmanager --licenses
 
 install:
+  - chmod +x ./jitpack.sh
+  - ./jitpack.sh
   - pwd
-  - ls -la prebuilt/bundle-android-aar/ffmpeg-kit
+  - ls -la prebuilt/bundle-android-aar/ffmpeg-kit/
 
 artifacts:
   - path: prebuilt/bundle-android-aar/ffmpeg-kit/ffmpeg-kit.aar
