@@ -4,9 +4,6 @@ jdk:
 before_install:
   - yes | sdkmanager --licenses
 
-git:
-  submodules: true
-
 install:
   - chmod +x ./jitpack.sh
   - ./jitpack.sh
