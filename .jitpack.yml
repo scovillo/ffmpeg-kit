@@ -14,5 +14,5 @@ install:
   - ./gradlew publish
 
 artifacts:
-  - path: prebuilt/bundle-android-aar/ffmpeg-kit/ffmpeg-kit.aar
+  - path: android/ffmpeg-kit-android-lib/build/outputs/aar/ffmpeg-kit-release.aar
     type: aar
