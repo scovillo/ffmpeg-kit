@@ -7,7 +7,11 @@ before_install:
 install:
   - chmod +x ./jitpack.sh
   - ./jitpack.sh
+  - pwd
+  - ls -la android/ffmpeg-kit-android-lib/build/outputs/aar
+  - mkdir -p published
+  - cp android/ffmpeg-kit-android-lib/build/outputs/aar/ffmpeg-kit-release.aar published/
 
 artifacts:
-  - path: ./android/ffmpeg-kit-android-lib/build/outputs/aar/ffmpeg-kit-release.aar
+  - path: published/ffmpeg-kit-release.aar
     type: aar
