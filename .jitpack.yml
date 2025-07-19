@@ -10,7 +10,8 @@ install:
   - pwd
   - ls -la prebuilt/bundle-android-aar/ffmpeg-kit/
   - ls -la android/ffmpeg-kit-android-lib/build/outputs/aar
+  - ls -la $HOME/.m2/repository/io/github/scovillo/ffmpeg-kit/1.0/
 
 artifacts:
-  - path: android/ffmpeg-kit-android-lib/build/outputs/aar/ffmpeg-kit-release.aar
+  - path: $HOME/.m2/repository/io/github/scovillo/ffmpeg-kit/1.0/ffmpeg-kit-1.0.aar
     type: aar
