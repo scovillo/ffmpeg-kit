@@ -1,7 +1,7 @@
-prefix=/home/luschee/IdeaProjects/ffmpeg-kit-scovillo/prebuilt/android-arm-neon/ffmpeg
+prefix=/home/luschee/IdeaProjects/ffmpeg-kit-1/prebuilt/android-arm-neon/ffmpeg
 exec_prefix=${prefix}
-libdir=/home/luschee/IdeaProjects/ffmpeg-kit-scovillo/prebuilt/android-arm-neon/ffmpeg/lib
-includedir=/home/luschee/IdeaProjects/ffmpeg-kit-scovillo/prebuilt/android-arm-neon/ffmpeg/include
+libdir=/home/luschee/IdeaProjects/ffmpeg-kit-1/prebuilt/android-arm-neon/ffmpeg/lib
+includedir=/home/luschee/IdeaProjects/ffmpeg-kit-1/prebuilt/android-arm-neon/ffmpeg/include
 
 Name: libavutil_neon
 Description: FFmpeg utility library
